@@ -1,0 +1,92 @@
+body {
+    background-image: url('paisaje.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header {
+    background: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+header h1 {
+    font-size: 2.5rem;
+    color: #FFD700;
+    margin: 0;
+}
+header p {
+    margin: 5px 0 0;
+    font-size: 1.2rem;
+    color: #00FA9A;
+}
+.container {
+    background: rgba(0, 0, 0, 0.85);
+    padding: 30px;
+    border-radius: 15px;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+.section {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.section:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+}
+.features, .formats {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 15px;
+    text-align: center;
+    width: 90%;
+    max-width: 1000px;
+}
+.actions {
+    margin: 20px;
+    display: flex;
+    gap: 10px;
+}
+.btn {
+    background: #FFD700;
+    color: #000;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: bold;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: background 0.3s ease;
+}
+.btn:hover {
+    background: #00FA9A;
+    color: #000;
+}
+footer {
+    background: rgba(0, 0, 0, 0.9);
+    padding: 10px 20px;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+}
+footer p {
+    margin: 0;
+    color: #fff;
+}
